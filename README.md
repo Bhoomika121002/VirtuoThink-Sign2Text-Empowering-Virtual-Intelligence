@@ -2,9 +2,7 @@
 
 ## Abstract
 
-Sign language is one of the oldest and most natural form of language for communication, but since most people do not know sign language and interpreters are very difficult to come by we have come up with a real time method using neural networks for fingerspelling based american sign language.
- 
-In this method, the hand is first passed through a filter and after the filter is applied the hand is passed through a classifier which predicts the class of the hand gestures. This method provides 98.00 % accuracy for the 26 letters of the alphabet.
+This project is a real-time method utilizing neural networks for fingerspelling based American Sign Language (ASL), addressing the challenge of communication barriers faced by individuals unfamiliar with sign language or lacking access to interpreters. Leveraging convolutional neural networks (CNNs), our approach achieves a 98.00% accuracy in recognizing the 26 letters of the alphabet. Initially, the hand undergoes filtering to enhance feature extraction, followed by classification to predict gesture classes. By incorporating hand position and orientation, we generate training and testing data for CNNs, enabling efficient recognition of human hand gestures from camera images. This method offers a promising solution for bridging communication gaps, empowering individuals to engage with ASL-based communication seamlessly.
 
 ## Libraries Requirements
 

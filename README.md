@@ -53,6 +53,20 @@ In another case it predicts the end of a word by printing a space and the curren
 A python library Hunspell_suggest is used to suggest correct alternatives for each (incorrect) input word and we display a set of words matching the current word in which the user can select a word to append it to the current sentence. This helps in reducing mistakes committed in spellings and assists in predicting complex words.
 
 
+## Conclusion
+A real-time vision-based American Sign Language (ASL) recognition system developed for Deaf and Mute (D&M) individuals, focusing on ASL alphabets.
+
+A final accuracy of 98.0% on the dataset, with significant improvement achieved through the implementation of two layers of algorithms.
+
+Enhanced prediction process enables differentiation between symbols with high similarity, improving system accuracy and robustness.
+
+The system demonstrates the capability to detect nearly all ASL symbols under optimal conditions: clear presentation, minimal background noise, and adequate lighting.
+
+The developed ASL recognition system showcases promising accuracy and functionality, offering potential to significantly enhance communication opportunities for the D&M community. Continued advancements in technology and algorithm refinement hold promise for further improving system accuracy and usability, ultimately fostering greater inclusivity and communication access for D&M individuals.
+
+
+
+
 
 
 

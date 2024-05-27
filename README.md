@@ -36,7 +36,7 @@ The system is a vision-based approach. All signs are represented with bare hands
 
 Gesture Classification: 
      
-   Algorithm Layer 1:
+Algorithm Layer 1:
      
 1. Apply Gaussian Blur filter and threshold to the frame taken with openCV to get the processed image after feature extraction.
    
@@ -44,11 +44,12 @@ Gesture Classification:
 
 3.Space between the words is considered using the blank symbol. 
 
-   Algorithm Layer 2:
+Algorithm Layer 2:
    
 1.We detect various sets of symbols which show similar results on getting detected.
 
 2.We then classify between those sets using classifiers made for those sets only.
+
 
 Finger Spelling Sentence Formation Implementation:
 
@@ -56,6 +57,7 @@ Whenever the count of a letter detected exceeds a specific value and no other le
 Otherwise, we clear the current dictionary which has the count of detections of the present symbol to avoid the probability of a wrong letter getting predicted.
 Whenever the count of a blank (plain background) detected exceeds a specific value and if the current buffer is empty no spaces are detected.
 In another case it predicts the end of a word by printing a space and the current gets appended to the sentence below. 
+
 
 AutoCorrect Feature:
 

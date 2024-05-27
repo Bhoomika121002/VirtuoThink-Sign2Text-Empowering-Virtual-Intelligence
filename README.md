@@ -34,7 +34,7 @@ To compile a diverse database of sign language gestures to cover cultural nuance
 
 The system is a vision-based approach. All signs are represented with bare hands and so it eliminates the problem of using any artificial devices for interaction.
 
-7.1  Gesture Classification: 
+Gesture Classification: 
      Algorithm Layer 1:
 1. Apply Gaussian Blur filter and threshold to the frame taken with openCV to get the processed image after feature extraction.
 2.This processed image is passed to the CNN model for prediction and if a letter is detected for more than 50 frames then the letter is printed and taken into consideration for forming the word.
@@ -43,13 +43,13 @@ The system is a vision-based approach. All signs are represented with bare hands
 1.We detect various sets of symbols which show similar results on getting detected.
 2.We then classify between those sets using classifiers made for those sets only.
 
- 7.2   Finger Spelling Sentence Formation Implementation:
+Finger Spelling Sentence Formation Implementation:
 Whenever the count of a letter detected exceeds a specific value and no other letter is close to it by a threshold, we print the letter and add it to the current string (In our code we kept the value as 50 and difference threshold as 20).
 Otherwise, we clear the current dictionary which has the count of detections of the present symbol to avoid the probability of a wrong letter getting predicted.
 Whenever the count of a blank (plain background) detected exceeds a specific value and if the current buffer is empty no spaces are detected.
 In another case it predicts the end of a word by printing a space and the current gets appended to the sentence below. 
 
- 7.3 AutoCorrect Feature:
+AutoCorrect Feature:
 A python library Hunspell_suggest is used to suggest correct alternatives for each (incorrect) input word and we display a set of words matching the current word in which the user can select a word to append it to the current sentence. This helps in reducing mistakes committed in spellings and assists in predicting complex words.
 
 

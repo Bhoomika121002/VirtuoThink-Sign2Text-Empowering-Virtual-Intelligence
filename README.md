@@ -39,12 +39,15 @@ Gesture Classification:
    Algorithm Layer 1:
      
 1. Apply Gaussian Blur filter and threshold to the frame taken with openCV to get the processed image after feature extraction.
+   
 2.This processed image is passed to the CNN model for prediction and if a letter is detected for more than 50 frames then the letter is printed and taken into consideration for forming the word.
+
 3.Space between the words is considered using the blank symbol. 
 
    Algorithm Layer 2:
    
 1.We detect various sets of symbols which show similar results on getting detected.
+
 2.We then classify between those sets using classifiers made for those sets only.
 
 Finger Spelling Sentence Formation Implementation:
